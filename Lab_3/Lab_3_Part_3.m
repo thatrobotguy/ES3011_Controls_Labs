@@ -14,7 +14,10 @@ pretty(simplify(H));
 
 mytf1 = tf([0 0 -1], [30*1500 1*1500 0]);
 mytf2 = tf([0 1], [1500 50]);
-% step(mytf1);
+figure(1);
+step(mytf1);
+figure(2);
 impulse(mytf1);
-% step(mytf2);
+figure(3);
+step(mytf2);
 disp(stepinfo(step(mytf1)));
