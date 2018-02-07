@@ -20,4 +20,4 @@ figure(2);
 impulse(mytf1);
 figure(3);
 step(mytf2);
-disp(stepinfo(step(mytf1)));
+disp(stepinfo(impulse(mytf1)));
