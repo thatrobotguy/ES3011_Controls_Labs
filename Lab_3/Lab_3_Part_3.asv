@@ -13,8 +13,8 @@ pretty(simplify(H));
 
 % mytf1 = tf([0 0 -1], [30*1500 1*1500 0]); mytf2 = tf([0 1], [1500 50]);
 
-mytf1 = tf([0 1], [Mass DampingK ]); 
-mytf2 = tf([0 0 1], [Mass DampingK 0]);
+mytf1 = tf([0 0 1], [Mass DampingK 0]); 
+mytf2 = tf([0 1], [1500 50]);
 
 figure(1); step(mytf1);
 figure(2); impulse(mytf1);

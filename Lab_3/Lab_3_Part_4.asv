@@ -13,10 +13,4 @@ pretty(simplify(H));
 mytf1 = tf( [ 0 0 0 107374182399999993750 ], ...
     [ 38654705664 64424554537156602 2759516487679999993 0 ] );
 
-mytf2 = tf( [ 0 0 0 0 107374182399999993750 ], ...
-    [ 38654705664 64424554537156602 2759516487679999993 0 0 ] );
-figure(1); step(mytf1); 
-figure(2); impulse(mytf1);
-figure(3); step(mytf2); title("Ramp REsponse");
-
-disp(stepinfo(mytf1));
+dispstepinfo(mytf1);
