@@ -1,4 +1,4 @@
-close all; clear all; clc ; syms s;
+close all; clear all; clc; syms s;
 J = 3E-6;       % kg.m^2                      
 b = 3.5E-6;      % N.s/m
 K = 0.025; % 0.025 Volts/radians/second  K
@@ -15,8 +15,9 @@ mytf1 = tf( [ 0 0 0 107374182399999993750 ], ...
 
 mytf2 = tf( [ 0 0 0 0 107374182399999993750 ], ...
     [ 38654705664 64424554537156602 2759516487679999993 0 0 ] );
+
 figure(1); step(mytf1); 
 figure(2); impulse(mytf1);
-figure(3); step(mytf2); title("Ramp REsponse");
+figure(3); step(mytf2); title("Ramp Response");
 
 disp(stepinfo(mytf1));

@@ -1,6 +1,4 @@
-close all; clear all; clc;
-syms s; % m k b f;
-
+close all; clear all; clc; syms s; % m k b f;
 % Mass = 5;               % m
 m = 5;
 % SpringK = 1;            % k

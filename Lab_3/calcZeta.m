@@ -1,4 +1,4 @@
-function Zeta = calcZeta()
+function Output = calcZetaOmegaNOmegaD(numerator, denominator)
 
 
 
